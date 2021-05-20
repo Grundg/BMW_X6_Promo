@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const tabsHandlerElems = document.querySelectorAll('[data-tabs-handler]');
     const tabsFieldElems = document.querySelectorAll('[data-tabs-field]');
-    const designTitleElems = document.querySelectorAll('.design__title');
+ //   const designTitleElems = document.querySelectorAll('.design__title');
 
     tabsHandlerElems.forEach((tab) =>{
         tab.addEventListener('click', () => {
@@ -19,16 +19,18 @@ document.addEventListener('DOMContentLoaded', () => {
                     item.classList.add('hidden');
                 }
             })
-            designTitleElems.forEach((item) => {
+
+/*            designTitleElems.forEach((item) => {
                 if (item.classList.contains('hidden')) {
                     item.classList.remove('hidden');
                 } else {
                     item.classList.add('hidden');
                 }
             })
-        })
+        })*/
     })
 });
+
 /*    for (const tab of tabsHandlerElems) {
         tab.addEventListener('click', () => {
             for (const item of tabsHandlerElems) {
@@ -47,3 +49,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         })
     }*/
+})
